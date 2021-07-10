@@ -34,6 +34,10 @@
   "name": "@creatorsneverdie/prepare-array-for-prisma",
   "author": "Creators Never Die",
   "module": "dist/prepare-array-for-prisma.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CREATORSNEVERDIE/prepare-array-for-prisma"
+  },
   "size-limit": [
     {
       "path": "dist/prepare-array-for-prisma.cjs.production.min.js",
