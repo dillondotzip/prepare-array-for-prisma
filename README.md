@@ -1,6 +1,11 @@
 # Prepare Array For Prisma
 A utility that will take regular arrays from forms and adapt them to work with prisma. It also works with nested arrays.
 
+## Get Started
+`yarn add @creatorsneverdie/prepare-array-for-prisma`
+
+`import prepareArrayField from "@creatorsneverdie/prepare-array-for-prisma"`
+
 ## How To
 `prepareArrayField()` takes 3 parameters:
 1. Form values

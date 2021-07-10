@@ -31,8 +31,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "prepare-array-for-prisma",
-  "author": "Dillon Raphael",
+  "name": "@creatorsneverdie/prepare-array-for-prisma",
+  "author": "Creators Never Die",
   "module": "dist/prepare-array-for-prisma.esm.js",
   "size-limit": [
     {
