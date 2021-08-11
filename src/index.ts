@@ -22,7 +22,7 @@ export function prepareArrayField(
   value: any[],
   initial?: any[],
   mapper?: null | ((item: any, initial?: any) => any),
-  { removedItemsMethod = "delete" }: Options = {}
+  { removedItemsMethod = "disconnect" }: Options = {}
 ) {
   value = value.filter(Boolean)
 

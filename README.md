@@ -7,10 +7,11 @@ A utility that will take regular arrays from forms and adapt them to work with p
 `import {prepareArrayField} from "@creatorsneverdie/prepare-array-for-prisma"`
 
 ## How To
-`prepareArrayField()` takes 3 parameters:
-1. Form values
-2. Initial database data
-3. Mapper
+`prepareArrayField()` takes 4 parameters:
+1. Form values as any[]
+2. Initial database data as any[]
+3. Mapper as ((item: any, initial?: any) => any)
+4. Options as { removedItemsMethod: 'disconnect' | 'delete'}
 
 You use the function like this:
 ```ts
@@ -20,6 +21,14 @@ const initial = [ {id: 2, name: 2}, {id: 3} ]
 const mappedArray = prepareArrayField(value, initial, (item) => ({
   ...item,
 }))
+```
+
+You can also set options object for handling removing elements. You can choose to either delete the element from the database completely, or disconnect. By default the option is set to  `disconnect`:
+
+```ts
+const mappedArray = prepareArrayField(value, initial, (item) => ({
+  ...item,
+}), {removedItemsMethod: "delete" })
 ```
 
 Then inside a prisma operation:
