@@ -14,7 +14,7 @@ describe('convert regular array for prisma', () => {
         connect: undefined,
         create: [ {name: 1} ],
         update: [ { data: {name: 3}, where: {id: 2} } ],
-        delete: [ {id: 3} ]
+        disconnect: [ {id: 3} ]
       }
     );
   });
