@@ -8,10 +8,10 @@ A utility that will take regular arrays from forms and adapt them to work with p
 
 ## How To
 `prepareArrayField()` takes 4 parameters:
-1. Form values as any[]
-2. Initial database data as any[]
-3. Mapper as ((item: any, initial?: any) => any)
-4. Options as { removedItemsMethod: 'disconnect' | 'delete'}
+1. Form values as `any[]`
+2. Initial database data as `any[]`
+3. Mapper as `((item: any, initial?: any) => any)`
+4. Options as `{ removedItemsMethod: 'disconnect' | 'delete'}`
 
 You use the function like this:
 ```ts
